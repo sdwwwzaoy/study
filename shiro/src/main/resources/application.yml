@@ -1,0 +1,19 @@
+server:
+  port: 8180
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/*.xml
+spring:
+  datasource:
+    url: jdbc:mysql://101.43.161.206:3306/shiro_db?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    username: root
+    password: k426h#aCjN1
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+shiro:
+  loginUrl: /myController/login
