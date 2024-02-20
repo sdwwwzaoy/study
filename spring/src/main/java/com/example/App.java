@@ -1,5 +1,6 @@
 package com.example;
 
+import com.example.event.UserRegisterEvent;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.support.DefaultSingletonBeanRegistry;
 import org.springframework.boot.SpringApplication;
@@ -39,6 +40,12 @@ public class App {
             System.out.println(resource);
         }
 
+        //3.找配置
+        System.out.println(context.getEnvironment().getProperty("java_home"));
+        System.out.println(context.getEnvironment().getProperty("server.port"));
+
+        //4.发布事件
+        context.publishEvent(new UserRegisterEvent(context));
 
     }
 }
