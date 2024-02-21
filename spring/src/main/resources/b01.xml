@@ -10,7 +10,7 @@
         <property name="bean1" ref="bean1"/>
     </bean>
 
-    <context:annotation-config/>
+<!--    <context:annotation-config/>-->
 
 
 
