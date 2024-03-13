@@ -1,4 +1,4 @@
-package com.example.jvm_1_memory.heap;
+package com.example.jvm_2_gc.gc;
 
 import java.util.ArrayList;
 

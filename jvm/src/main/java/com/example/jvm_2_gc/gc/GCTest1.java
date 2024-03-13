@@ -1,4 +1,4 @@
-package com.example.jvm_1_memory.heap;
+package com.example.jvm_2_gc.gc;
 
 import java.util.ArrayList;
 
@@ -37,7 +37,7 @@ public class GCTest1 {
         // Metaspace       used 3206K, capacity 4496K, committed 4864K, reserved 1056768K
         //  class space    used 353K, capacity 388K, committed 512K, reserved 1048576K OOM了
         //Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
-        //	at com.example.jvm_1_memory.heap.GCTest1.main(GCTest1.java:26)
+        //	at com.example.jvm_2_gc.gc.GCTest1.main(GCTest1.java:26)
     }
 
 }
