@@ -9,8 +9,8 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-@TableName("order")
-public class Order {
+@TableName("mall_order")
+public class MallOrder {
 
     @TableId(type = IdType.AUTO)
     Long id;
@@ -20,6 +20,9 @@ public class Order {
 
     @TableField("user_id")
     String userId;
+
+    @TableField("status")
+    Integer status;
 
     @TableField("create_time")
     Date createTime;
